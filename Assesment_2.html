@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Portal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            background: #f0f2f5;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+        }
+
+        .logo {
+            width: 100px;
+            height: auto;
+        }
+
+        .search-bar {
+            margin-left: 20px;
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .game-section {
+            margin: 20px 0;
+        }
+
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .game-card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            background: #fff;
+            transition: transform 0.2s;
+        }
+
+        .game-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .categories {
+            margin-top: 40px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .categories ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 10px;
+        }
+
+        .categories li {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            transition: background-color 0.2s;
+        }
+
+        .categories li:hover {
+            background: #e0e0e0;
+        }
+
+        .see-more {
+            display: block;
+            text-align: right;
+            color: #0066cc;
+            text-decoration: none;
+            margin: 10px 0;
+        }
+
+        h1, h2 {
+            color: #333;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fes%2Ffree-png-zqhqp&psig=AOvVaw3J6HmbuZj9yETFWKNjMUTG&ust=1728144915939000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPC_8_2P9YgDFQAAAAAdAAAAABAJ" alt="Website logo">
+        <input type="text" class="search-bar" placeholder="Search games...">
+    </header>
+
+    <h1>Most popular games:</h1>
+   
+    <div class="game-section">
+        <h2>Featured Games</h2>
+        <div class="game-grid">
+            <div class="game-card">
+                <img src="https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/ncom/software/switch/70010000000964/a28a81253e919298beab2295e39a56b7a5140ef15abdb56135655e5c221b2a3a" alt="Minecraft">
+                <h3>Minecraft</h3>
+                <p>Build and explore!</p>
+            </div>
+            <div class="game-card">
+                <img src="https://cdn2.unrealengine.com/social-image-chapter4-s3-3840x2160-d35912cc25ad.jpg" alt="Fortnite">
+                <h3>Fortnite</h3>
+                <p>Battle Royale action</p>
+            </div>
+            <div class="game-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR9C-t9SGpyepQictggzeqstE5FgBX9wN4rQ&s" alt="Among Us">
+                <h3>Among Us</h3>
+                <p>Find the impostor!</p>
+            </div>
+            <div class="game-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgVgThU6-nTdlwyNLjbnFvsccRL7LYC5fSsg&s" alt="GTA V">
+                <h3>GTA V</h3>
+                <p>Open world action</p>
+            </div>
+            <div class="game-card">
+                <img src="https://image.api.playstation.com/vulcan/ap/rnd/202312/0123/978efa66c9645e4692ac7036a31aa002a49d0efb4b88b45c.png" alt="Call of Duty">
+                <h3>Call of Duty: Warzone</h3>
+                <p>First-person shooter</p>
+            </div>
+            <div class="game-card">
+                <img src="https://img.redbull.com/images/c_fill,g_auto,w_1200,h_600/f_auto,q_auto/redbullcom/2022/8/1/ksfga6rlx2ugfhjd9vnk/league-of-legends" alt="League of Legends">
+                <h3>League of Legends</h3>
+                <p>MOBA strategy</p>
+            </div>
+        </div>
+
+        <h2>New Games</h2>
+        <div class="game-grid">
+            <div class="game-card">
+                <img src="https://store-images.s-microsoft.com/image/apps.35187.13567343664224659.1eb6fdf9-8a0b-4344-a135-ab17dfa3c609.c83b6d6a-56c3-4c3f-8b31-456cfb21c3b7" alt="Starfield">
+                <h3>Starfield</h3>
+                <p>Space exploration RPG</p>
+            </div>
+            <div class="game-card">
+                <img src="https://www.irrompibles.net/irrwp/wp-content/uploads/2020/10/BALDURS-GATE-3-HEAD-e1691599380724.jpg" alt="Baldur's Gate 3">
+                <h3>Baldur's Gate 3</h3>
+                <p>Fantasy RPG adventure</p>
+            </div>
+            <div class="game-card">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/dffe2c65-9c9b-4017-be47-5796c0dfef1a/df3zy1o-3457963e-6801-44e9-9420-6c4c628d52fa.jpg/v1/fill/w_1280,h_720,q_75,strp/wp4124313_overwatch_logo_wallpapers_by_maezzo_df3zy1o-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvZGZmZTJjNjUtOWM5Yi00MDE3LWJlNDctNTc5NmMwZGZlZjFhXC9kZjN6eTFvLTM0NTc5NjNlLTY4MDEtNDRlOS05NDIwLTZjNGM2MjhkNTJmYS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.7nBOm5xpWF_5jTrNl60pzF2-4sD924viIoY-9dTlwLU" alt="Baldur's Gate 3">
+                <h3>Overwatch</h3>
+                <p>Fantasy shooter</p>
+            </div>
+            <div class="game-card">
+                <img src="https://cdn1.epicgames.com/offer/b2818b59c0bb420e9647983dfd254931/EGS_Octopus_InsomniacGamesNixxesSoftware_S2_1200x1600-5831c61378872a1fe233b295fbf3140f" alt="Spider-Man 2">
+                <h3>Marvel's Spider-Man 2</h3>
+                <p>Superhero action</p>
+            </div>
+            <div class="game-card">
+                <img src="https://cdn1.epicgames.com/offer/fda0f2b4047f46ffb4e94d5595c1468e/EGS_MortalKombat1_NetherRealmStudios_S4_1200x1600-076e67292bb57f11ebb4465b7e74a65e" alt="Mortal Kombat 1">
+                <h3>Mortal Kombat 1</h3>
+                <p>Fighting game</p>
+            </div>
+            <div class="game-card">
+                <img src="https://image.api.playstation.com/vulcan/ap/rnd/202305/2420/c3daf3037feb797d9e71b81618e3b5ff3ff1f9609db5a4a2.png" alt="Alan Wake 2">
+                <h3>Alan Wake 2</h3>
+                <p>Survival horror</p>
+            </div>
+        </div>
+        <a href="https://www.example.com" class="see-more">See more new games →</a>
+
+
+
+
+        <h2>Games to play with friends</h2>
+        <div class="game-grid">
+            <div class="game-card">
+                <img src="https://cdn2.unrealengine.com/egs-fallguys-mediatonic-g1a-00-1920x1080-75b891d04ff9.jpg" alt="Fall Guys">
+                <h3>Fall Guys</h3>
+                <p>Multiplayer party game</p>
+            </div>
+            <div class="game-card">
+                <img src="https://www.rocketleague.com/images/keyart/rl_evergreen.jpg" alt="Rocket League">
+                <h3>Rocket League</h3>
+                <p>Soccer with cars!</p>
+            </div>
+            <div class="game-card">
+                <img src="https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/ncom/software/switch/70010000003402/057249cf707a2a733c876c0eb453bb018ee6ea09f3aea5c350f4d76f70840d00" alt="Overcooked">
+                <h3>Overcooked! 2</h3>
+                <p>Chaotic cooking</p>
+            </div>
+            <div class="game-card">
+                <img src="https://store.ubisoft.com/dw/image/v2/ABBS_PRD/on/demandware.static/-/Sites-masterCatalog/default/dw63e24d90/images/large/56c494ad88a7e300458b4d5a.jpg?sw=300&sh=395&sm=fit" alt="Rainbow Six Siege">
+                <h3>Rainbow Six Siege</h3>
+                <p>Tactical shooter</p>
+            </div>
+            <div class="game-card">
+                <img src="https://image.api.playstation.com/vulcan/ap/rnd/202012/0815/IjqyQi0J2PL7GdEo3K8jKWMh.png" alt="It Takes Two">
+                <h3>It Takes Two</h3>
+                <p>Co-op adventure</p>
+            </div>
+            <div class="game-card">
+                <img src="https://www.uploadvr.com/content/images/size/w1200/2024/10/PhasmophobiaKeyArt16x9-1.png" alt="Phasmophobia">
+                <h3>Phasmophobia</h3>
+                <p>Co-op horror</p>
+            </div>
+        </div>
+        <a href="https://www.example.com" class="see-more">See more multiplayer games →</a>
+    </div>
+
+
+
+
+    <section class="categories">
+        <h1>Game categories:</h1>
+        <ul>
+            <li>Adventure</li>
+            <li>Beauty</li>
+            <li>Casual</li>
+            <li>Action</li>
+            <li>Sports</li>
+            <li>Racing</li>
+            <li>Strategy</li>
+            <li>RPG</li>
+            <li>Puzzle</li>
+            <li>Simulation</li>
+            <li>Horror</li>
+            <li>Fighting</li>
+            <li>Platformer</li>
+            <li>Shooter</li>
+            <li>Battle Royale</li>
+        </ul>
+    </section>
+</body>
+</html>
