@@ -1,19 +1,62 @@
-body{
-    display:flex;
-}
-div{
-    display: block;
-}
-h1{
-    color: red;
-    display: block;
+body {
+    background-color: skyblue;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
-a{
-    display: block;
-    color: black;
-p{
-    background-color: aqua;
-    border: 2px solid black; 
-    margin: 0;
+header {
+    background-color: gray;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 40px;
+}
+
+.home-button {
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+input {
+    padding: 5px;
+    width: 200px;
+}
+
+footer {
+    background-color: gray;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgray;
+}
+
+.game-gallery, .sports-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.game-gallery img, .sports-gallery img, .main-game {
+    width: 150px;
+    height: 100px;
+    border-radius: 5px;
 }
